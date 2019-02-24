@@ -29,7 +29,9 @@
     "node build/bin/iconInit.js    : 解析icon.scss，将所有小图标的name存入examples/icon.json",
     "node build/bin/build-entry.js : 根据components.json，生成入口文件",
     "node build/bin/i18n.js        : 根据examples/i18n/page.json和模板，生成不同语言的demo",
-    "node build/bin/version.js     : 生成examples/versions.json，键值对，各个大版本号对应的最新版本"
+    "node build/bin/version.js     : 生成examples/versions.json，键值对，各个大版本号对应的最新版本",
+    "如果是并行执行（即同时的平行执行），可以使用&符号。 如果是继发执行（即只有前一个任务成功，才执行下一个任务），可以使用&&符号。",
+    "webpack-dev-server --config build/webpack.demo.js 和 node build/bin/template.js 同样是监听文件变化 他们中只会执行顺序靠前的一个"
   ],
   "scripts": {
     "bootstrap": "yarn || npm i",
