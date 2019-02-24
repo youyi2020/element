@@ -1,4 +1,4 @@
-{
+  {
   "name": "element-ui",
   "version": "2.5.4",
   "description": "A Component Library for Vue.js.",
@@ -10,6 +10,27 @@
     "types"
   ],
   "typings": "types/index.d.ts",
+  "note": [
+    "bootstrap   : 安装项目依赖。有 yarn 就用，无则使用 npm 安装依赖",
+    "build:file  : 文件相关的构建 除了 build-entry.js 其他都是为官网服务的",
+    "build:theme : 主题文件相关的构建",
+    "build:utils : 工具文件相关的构建 ",
+    "build:umd   : 把国际化文件打包成 umd 格式",
+    "clean       : 清除打包缓存",
+    "deploy:build: 官网构建打包",
+    "dev         : 官网开发模式",
+    "dev:play    : 组件开发模式",
+    "dist        : 组件生产构建",
+    "i18n        : 国际化",
+    "lint        : eslint校验",
+    "pub         : 发布",
+    "test        : 测试",
+    "test:watch  : 自动化测试",
+    "node build/bin/iconInit.js    : 解析icon.scss，将所有小图标的name存入examples/icon.json",
+    "node build/bin/build-entry.js : 根据components.json，生成入口文件",
+    "node build/bin/i18n.js        : 根据examples/i18n/page.json和模板，生成不同语言的demo",
+    "node build/bin/version.js     : 生成examples/versions.json，键值对，各个大版本号对应的最新版本"
+  ],
   "scripts": {
     "bootstrap": "yarn || npm i",
     "build:file": "node build/bin/iconInit.js & node build/bin/build-entry.js & node build/bin/i18n.js & node build/bin/version.js",
@@ -46,6 +67,9 @@
     "url": "https://github.com/ElemeFE/element/issues"
   },
   "unpkg": "lib/index.js",
+  "note1": [
+    "style : 指定供浏览器使用时，样式文件所在的位置"
+  ],
   "style": "lib/theme-chalk/index.css",
   "dependencies": {
     "async-validator": "~1.8.1",
