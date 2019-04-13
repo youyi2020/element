@@ -1,7 +1,7 @@
 import Vue from 'vue';
-import Element from 'main/index.js';
+import Element from 'main/index.js'; // 引入element源码
 import App from './play/index.vue';
-import 'packages/theme-chalk/src/index.scss';
+import 'packages/theme-chalk/src/index.scss'; // 组件所有样式
 
 Vue.use(Element);
 
