@@ -247,6 +247,10 @@
             {
               "path": "/timeline",
               "title": "Timeline 时间线"
+            },
+            {
+              "path": "/btn",
+              "title": "Btn 测试按钮"
             }
           ]
         }
@@ -501,6 +505,10 @@
             {
               "path": "/timeline",
               "title": "Timeline"
+            },
+            {
+              "path": "/btn",
+              "title": "Btn"
             }
           ]
         }
@@ -755,6 +763,10 @@
             {
               "path": "/timeline",
               "title": "Timeline"
+            },
+            {
+              "path": "/btn",
+              "title": "Btn"
             }
           ]
         }
@@ -1009,6 +1021,10 @@
             {
               "path": "/timeline",
               "title": "Timeline"
+            },
+            {
+              "path": "/btn",
+              "title": "Btn"
             }
           ]
         }

@@ -1,3 +1,6 @@
+<!-- el-button 按钮的基本类-->
+<!-- autofocus true表示按钮自动获得焦点，按钮获得焦点就是按钮为focus的状态，可以用于提示用户-->
+<!--span这个标签当且仅当<el-button>中有内容时才存在，内容放在slot插槽中，用$slots.default来判断是否有子元素存在，可以借鉴-->
 <template>
   <button
     class="el-button"
@@ -71,6 +74,7 @@
 
     methods: {
       handleClick(evt) {
+        /* evt 事件对象 */
         this.$emit('click', evt);
       }
     }
