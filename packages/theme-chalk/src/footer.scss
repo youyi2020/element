@@ -1,6 +1,7 @@
 @import "mixins/mixins";
 @import "common/var";
 
+// flex-shrink:0这个代码，这表示当父容器宽度不够时，footer不会收缩而是保持原本的宽度，也就是说footer是永远不会被压缩，就算超出容器。flex-shrink默认为1，也就是所有元素等比例收缩，
 @include b(footer) {
   padding: $--footer-padding;
   box-sizing: border-box;
